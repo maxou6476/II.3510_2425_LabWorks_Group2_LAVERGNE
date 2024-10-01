@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editText_app"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="ecrire ici"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:gravity="start|top"
+        android:layout_marginEnd="8dp"
+        android:minHeight="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/button1_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="envoyer texte"
+        app:layout_constraintTop_toBottomOf="@+id/editText_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/button2_app"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="font color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/button3_app"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="font size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+
+    <TextView
+        android:id="@+id/textView_app"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="start|top"
+        android:minHeight="100dp"
+        android:padding="8dp"
+        android:text="hello app"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/button3_app"
+        app:layout_constraintStart_toStartOf="@+id/button2_app"
+        app:layout_constraintTop_toBottomOf="@+id/button1_app" />
+</androidx.constraintlayout.widget.ConstraintLayout>
